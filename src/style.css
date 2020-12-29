@@ -1,0 +1,58 @@
+.Script {
+  margin: 0px;
+  /* padding: 0; */
+  font-family: sans-serif;
+  width: 300px;
+  height: 400px;
+  padding: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    -45deg,
+    rgb(0, 119, 255),
+    rgb(76, 0, 255),
+    rgb(209, 2, 157),
+    purple
+  );
+  background-size: 300% 300%;
+  position: absolute;
+  text-align: center;
+  animation: change 10s ease-in-out infinite;
+}
+
+.Script h1 {
+  letter-spacing: 8px;
+}
+
+.Script button {
+  margin: 10px;
+  margin-top: 250px;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 90px;
+  cursor: pointer;
+  /* border-color: orangered; */
+  letter-spacing: 5px;
+  background: linear-gradient(90deg, rgb(245, 8, 233), rgb(8, 136, 136));
+  background-size: 200% 200%;
+  animation: change 5s ease-in-out infinite;
+}
+
+.Script button :hover {
+  color: rgb(155, 5, 122);
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
